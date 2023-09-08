@@ -36,6 +36,5 @@ def get_image_link(prompt):
 
     download_link = f"http://{os.environ.get('VPS_IP', 'localhost')}:{os.environ.get('VPS_PORT', '8000')}/{file_name}"
     return download_link
-print(get_image_link('cat'))
 
 
