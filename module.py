@@ -20,7 +20,7 @@ def get_image_link(prompt):
 
 
     r = response.json()
-    file_name = f'{prompt}_{str(time.time())}.png'
+    file_name = f'{str(time.time())}.png'
     for i in r['images']:
         image = Image.open(io.BytesIO(base64.b64decode(i.split(",",1)[0])))
 
